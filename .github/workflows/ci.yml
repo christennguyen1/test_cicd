@@ -28,8 +28,8 @@ jobs:
           npm run build  # Đảm bảo bạn có script build trong package.json
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          files: "dist/*" # Đảm bảo bạn đã định nghĩa thư mục `dist` trong cấu hình `electron-builder`
+          uses: softprops/action-gh-release@v1
+          env:
+            GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          with:
+            files: 'dist/*' # Đảm bảo bạn đã định nghĩa thư mục `dist` trong cấu hình `electron-builder`
