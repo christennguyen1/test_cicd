@@ -13,7 +13,7 @@ function createWindow() {
     }
   });
 
-  win.loadURL('https://www.example.com');
+  win.loadURL('https://www.google.com');
 }
 
 app.whenReady().then(() => {
